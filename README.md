@@ -41,4 +41,3 @@ Este proyecto permite a los usuarios ingresar sus datos de contacto a través de
 
 - [SheetJS](https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js): Biblioteca utilizada para generar archivos Excel.
 
-¡Disfruta utilizando este exportador de contactos y generando tus archivos Excel de forma local!
