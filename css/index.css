@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
+    font-family: 'Roboto', sans-serif;
+    /* Aplicar la fuente Roboto */
 }
 
 svg {
@@ -83,17 +84,20 @@ p {
     width: 100%;
     margin-top: 2rem;
     border-collapse: collapse;
-    border: 2px solid #ddd; /* Borde de la tabla */
+    border: 2px solid #ddd;
+    /* Borde de la tabla */
 }
 
 .dynamic-table thead th,
 .dynamic-table tbody td {
-    border-bottom: 1px solid #ddd; /* Borde inferior */
+    border-bottom: 1px solid #ddd;
+    /* Borde inferior */
     padding: 0.75rem;
 }
 
 .dynamic-table tbody tr:last-child td {
-    border-bottom: 2px solid #ddd; /* Borde inferior más grueso para la última fila del tbody */
+    border-bottom: 2px solid #ddd;
+    /* Borde inferior más grueso para la última fila del tbody */
 }
 
 #export-btn {
@@ -112,6 +116,34 @@ p {
 
 #export-btn:hover {
     background-color: #252525;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.social-icons svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: #252525;
 }
 
 /* Media Queries para dispositivos móviles */
