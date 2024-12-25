@@ -79,6 +79,10 @@ p {
     cursor: pointer;
 }
 
+.delete-button:hover {
+    background-color: #d81919;
+}
+
 .dynamic-table {
     text-align: center;
     width: 100%;
@@ -134,16 +138,38 @@ p {
 
 .social-icons a {
     color: #000;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 50%;
 }
 
 .social-icons svg {
     width: 1.5rem;
     height: 1.5rem;
+    transition: transform 0.3s ease;
 }
 
-.social-icons a:hover {
+.social-icons a:hover,
+.social-icons a:focus {
     color: #252525;
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.social-icons a:hover svg,
+.social-icons a:focus svg {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 1rem;
+    }
+    
+    .social-icons svg {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
 }
 
 /* Media Queries para dispositivos móviles */
